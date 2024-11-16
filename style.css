@@ -1,0 +1,270 @@
+:root {
+    --titulos: rgb(255, 106, 0); /* Definición de una variable CSS para el color de los títulos */
+}
+
+body {
+    background-color: rgb(243, 234, 234); /* Color de fondo suave para el cuerpo de la página */
+    margin: 0px; /* Elimina el margen predeterminado */
+    font-family: "Oswald", sans-serif; /* Define la tipografía de todo el texto */
+    box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en las dimensiones del elemento */
+}
+
+header {
+    display: flex; /* Usa Flexbox para el diseño */
+    flex-direction: column; /* Los elementos dentro del header estarán en columna */
+    justify-content: flex-end; /* Alinea los elementos al final del contenedor */
+    width: 100%; /* Hace que el header ocupe todo el ancho disponible */
+}
+
+.top-bar {
+
+    display: flex; /* Usa Flexbox para el diseño */
+    flex-direction: row; /* Los elementos dentro de la barra estarán en fila */
+    width: 70%; /* Define el ancho de la barra */
+    height: 120%; /* Define la altura de la barra */
+    justify-content: space-around; /* Distribuye los elementos de manera uniforme */
+    align-items: center; /* Centra los elementos en el eje vertical */
+    margin:initial; /* Centra la barra en el contenedor */
+    justify-content: flex-start; /* Alinea los elementos al principio de la barra (esto sobrescribe el anterior justify-content) */
+}
+
+.nav {
+    display: flex; /* Usa Flexbox para el diseño */
+    gap: 20px; /* Espaciado de 20px entre los elementos */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+}
+
+.nav li {
+    list-style-type: none; /* Elimina los puntos de las listas */
+}
+
+.nav a {
+    text-decoration: none; /* Elimina el subrayado en los enlaces */
+}
+
+.nav a:hover {
+    color: var(--titulos); /* Cambia el color al del título cuando el enlace es hover */
+}
+
+.hero {
+    color: rgb(8, 8, 8); /* Establece el color del texto dentro de la hero */
+    background-color: rgb(243, 234, 234); /* Fondo negro para la hero */
+    height: 250px; /* Altura de la hero */
+    width: 90%; /* Ancho completo de la hero */
+    margin: auto; /* Centra la hero horizontalmente */
+}
+
+.herocontent {
+    display: flex; /* Usa Flexbox para alinear los elementos dentro de la hero */
+    flex-direction:column; /* Organiza los elementos en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    width: 60%; /* Ancho del contenido de la hero */
+    margin: auto; /* Centra el contenido de la hero */
+}
+
+.herotitle {
+    font-size: 3em; /* Tamaño de fuente grande para el título */
+    text-transform: uppercase; /* Convierte el texto del título a mayúsculas */
+    font-weight: 800; /* Aplica un grosor de fuente de 700 (negrita) */
+    width: -100%; /* Ancho del título */
+}
+
+.herotitle span {
+    color: var(--titulos); /* Aplica el color del título (naranja) al texto dentro del <span> */
+}
+
+.herotext {
+    text-align: center; /* Justifica el texto dentro del párrafo */
+    width: 200%; /* Ancho del título */
+    font-size: 22px;
+}
+
+.cta {
+    display: flex; /* Usa Flexbox para alinear los elementos dentro de la llamada a la acción */
+    justify-content: flex-start; /* Alinea los elementos al inicio del contenedor */
+    flex-direction: row; /* Organiza los elementos en fila */
+    align-items: center; /* Centra los elementos verticalmente */
+    width: 40%; /* Ancho del contenedor de la llamada a la acción */
+    gap: 20px; /* Espaciado de 20px entre los elementos */
+    font-size: 22px;
+}
+
+.cta a {
+    background-color: chartreuse; /* Fondo verde brillante para los enlaces de la llamada a la acción */
+    box-sizing: content-box; /* Ajusta el box-sizing para que no se incluya el padding en el tamaño total */
+    height: 20px; /* Altura del enlace */
+    padding: 10px; /* Espaciado interno alrededor del texto */
+    text-decoration: uppercase; /* Convierte el texto a mayúsculas */
+    font-weight: 700; /* Aplica un grosor de fuente de 700 (negrita) */
+    text-align: center; /* Centra el texto dentro del enlace */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    display: flex; /* Usa Flexbox para centrar el contenido dentro del enlace */
+    align-items: center; /* Centra los elementos verticalmente */
+    justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+#boton1 {
+    background-color: var(--titulos); /* Aplica el color naranja al botón 1 */
+}
+
+.cajas {
+    display: flex; /* Usa Flexbox para organizar las cajas en fila */
+    background-color: burlywood; /* Fondo color madera */
+    padding: 20px; /* Espaciado interno */
+    gap: 20px; /* Espacio entre las cajas */
+    justify-content: space-between; /* Asegura que las cajas se distribuyan con espacio entre ellas */
+}
+
+.box {
+    background-color: white; /* Fondo blanco para cada caja */
+    height: 350px; /* Altura de las cajas */
+    width: 600px; /* Ancho de las cajas */
+    display: flex; /* Usa Flexbox para organizar los elementos dentro de la caja */
+    flex-direction: column; /* Organiza los elementos en columna */
+    justify-content: end; /* Alinea los elementos al final de la caja */
+}
+.box1 {
+    background-image: url(Imagenes/imagen\ 2.jpeg); /* Fondo con la imagen 2 para la caja 1 */
+    background-size: cover; /* Hace que la imagen cubra todo el área de la caja */
+    background-position: center; /* Centra la imagen dentro de la caja */
+    background-repeat: no-repeat; /* Evita que la imagen se repita si no cubre toda la caja */
+}
+
+.box2 {
+    background-image: url(Imagenes/imagen\ 3.jpeg); /* Fondo con la imagen 3 para la caja 2 */
+    background-size: cover; /* Hace que la imagen cubra todo el área de la caja */
+    background-position: center¿; /* Centra la imagen dentro de la caja */
+    background-repeat: no-repeat; /* Evita que la imagen se repita si no cubre toda la caja */
+}
+
+.box3 {
+    background-image: url(Imagenes/imagen\ 7.jpeg); /* Fondo con la imagen 7 para la caja 3 */
+    background-size: cover; /* Hace que la imagen cubra todo el área de la caja */
+    background-position: center; /* Centra la imagen dentro de la caja */
+    background-repeat: no-repeat; /* Evita que la imagen se repita si no cubre toda la caja */
+}
+
+/* Estilo para el contenedor de la información debajo de la imagen */
+.box .info {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco translúcido para el área de texto */
+    padding: 10px; /* Espaciado interno de la sección de información */
+    margin-top: 10px; /* Espaciado superior entre la imagen y el contenido */
+    text-align: center; /* Centra el texto dentro del contenedor */
+    border-radius: 5px; /* Bordes redondeados opcionales */
+}
+
+.box .info p {
+    margin: 0; /* Elimina el margen por defecto de los párrafos */
+    font-size: 14px; /* Tamaño de fuente del texto */
+    color: #333; /* Color del texto */
+}
+/* Estilo común para las secciones */
+.info-section {
+    padding: 10px; /* Espaciado alrededor del contenido */
+    margin-bottom: 10px; /* Espaciado entre las secciones */
+    background-color: #f4f4f4; /* Color de fondo suave */
+    border-radius: 8px; /* Bordes redondeados */
+    width: 100%; /* Establece el ancho de la sección */
+    margin: 30px auto; /* Centra la sección */
+}
+
+/* Estilo para el título de cada sección */
+.info-section h2 {
+    font-size: 26px; /* Tamaño del texto del título */
+    color: #333; /* Color del texto */
+    margin-bottom: 10px; /* Espaciado debajo del título */
+    text-align: center; /* Centra el título */
+}
+
+/* Estilo para los párrafos dentro de las secciones */
+.info-section p {
+    font-size: 22px; /* Tamaño del texto de los párrafos */
+    line-height: 1.6; /* Espaciado entre líneas */
+    color: #666; /* Color del texto */
+    text-align: center; /* Justifica el texto */
+}
+#page {
+    background-color: #fff3e0; /* Fondo con un tono de naranja suave */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+#events {
+    background-color: #f1f8e9; /* Fondo con un tono de verde claro */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+#program {
+    background-color: #e0f7fa; /* Fondo con un tono de azul claro */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+/* Estilo para la galería de imágenes */
+.gallery {
+    background-color: #f4f4f4; /* Fondo gris suave para la galería */
+    padding: 20px; /* Espaciado interno */
+    margin-top: 0px; /* Espaciado superior */
+    width: 100vw; /* Asegura que el ancho sea el 100% de la ventana de visualización */
+    margin-left: 0; /* Elimina cualquier margen a la izquierda */
+    margin-right: 0; /* Elimina cualquier margen a la derecha */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
+
+.gallery h2 {
+    text-align: center; /* Centra el título */
+    font-size: 2em; /* Tamaño grande para el título */
+    color: #333; /* Color del título */
+    margin-bottom: 20px; /* Espaciado debajo del título */
+}
+
+.gallery-grid {
+    display: grid; /* Usa Grid Layout para organizar las imágenes */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Crea una cuadrícula de columnas que se ajustan según el ancho */
+    gap: 20px; /* Espacio entre los elementos de la galería */
+    justify-items: center; /* Centra las imágenes en cada celda */
+}
+
+.gallery-item {
+    border: 8px solid #ddd; /* Borde suave alrededor de cada imagen */
+    padding: 10px; /* Espaciado alrededor de las imágenes */
+    background-color: white; /* Fondo blanco para las celdas */
+    transition: transform 0.3s ease; /* Transición suave para el efecto de hover */
+}
+
+.gallery-item:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño de la imagen al pasar el ratón */
+}
+
+.gallery-item img {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho de la celda */
+    height: 100%; /* Mantiene la proporción de la imagen */
+    border-radius: 8px; /* Bordes redondeados en las imágenes */
+}
+
+/* Estilo específico para cada sección */
+#blog {
+    background-color: #e0f7fa; /* Fondo con un tono de azul claro */
+}
+
+#shop {
+    background-color: #fff3e0; /* Fondo con un tono de naranja suave */
+}
+
+#contact {
+    background-color: #f1f8e9; /* Fondo con un tono de verde claro */
+}
+
+.footer {
+    background-color: #333; /* Un color oscuro que combina con el diseño */
+    color: #fff; /* Texto blanco */
+    padding: 20px; /* Espaciado interno de la sección de pie de página */
+    text-align: center; /* Centra el texto dentro del pie de página */
+    font-size: 1rem; /* Tamaño de la fuente en el pie de página */
+    margin-top: 50px; /* Espaciado superior para separar del contenido anterior */
+}
+
+.footer p {
+    margin: 0; /* Elimina márgenes del texto en el pie de página */
+}
